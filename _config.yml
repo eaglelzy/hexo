@@ -4,8 +4,8 @@
 
 # Site
 title: Lizy's Blog
-subtitle: 人生苦短，何不做些自己喜欢的事情
-description:
+subtitle: 
+description: 
 author: Lizy
 language: zh-Hans
 timezone: Asia/Shanghai
@@ -72,6 +72,20 @@ deploy:
   type: git
   repo: git@github.com:eaglelzy/eaglelzy.github.io.git
   branch: master
+
+plugin:
+- hexo-generator-feed
+- hexo-generator-sitemap
+
+sitmap:
+  path: sitemap.xml
+baidusitmap:
+  path: baidusitemap.xml
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
 
 jsonContent:
   meta: false
